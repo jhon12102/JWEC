@@ -237,6 +237,12 @@
   </style>
 </head>
 <body>
+  <script>
+    // Si no está autenticado, redirige al login
+    if (!localStorage.getItem('autenticado')) {
+      window.location.href = 'login.html';
+    }
+  </script>
   <header>
     <nav>
       <div class="logo-container">
@@ -310,6 +316,7 @@
 
   <footer>
     <p>&copy; 2025 JWEC. Todos los derechos reservados.</p>
+    <button onclick="localStorage.removeItem('autenticado'); location.href='login.html';" style="margin-top:10px;">Cerrar sesión</button>
   </footer>
 </body>
 </html>
