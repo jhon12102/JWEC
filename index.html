@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Páginas Web Atractivas | JWEC</title>
+  <title>El Gato Fénix</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', Arial, sans-serif;
-      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+      background: linear-gradient(135deg, #f8fafc 0%, #fcd34d 100%);
       color: #22223b;
     }
     header {
-      background: linear-gradient(120deg, #4f46e5 60%, #818cf8 100%);
+      background: linear-gradient(120deg, #f59e42 60%, #fbbf24 100%);
       color: #fff;
       padding-bottom: 40px;
-      box-shadow: 0 4px 16px rgba(79,70,229,0.1);
+      box-shadow: 0 4px 16px rgba(245,158,66,0.1);
     }
     nav {
       display: flex;
@@ -34,7 +34,6 @@
       height: 54px;
       border-radius: 12px;
       object-fit: cover;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
       background: #fff;
       border: 2px solid #fff;
     }
@@ -44,7 +43,7 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       color: #fff;
-      text-shadow: 0 2px 8px rgba(79,70,229,0.10);
+      text-shadow: 0 2px 8px rgba(245,158,66,0.10);
     }
     nav ul {
       list-style: none;
@@ -60,7 +59,7 @@
       transition: color 0.2s;
     }
     nav a:hover {
-      color: #a5b4fc;
+      color: #fcd34d;
     }
     .hero {
       text-align: center;
@@ -76,31 +75,7 @@
     .hero p {
       font-size: 1.2rem;
       margin-bottom: 28px;
-      color: #e0e7ff;
-    }
-    .cta-btn {
-      background: #fff;
-      color: #4f46e5;
-      padding: 14px 38px;
-      border-radius: 30px;
-      font-size: 1.1rem;
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: 0 2px 8px rgba(79,70,229,0.08);
-      transition: background 0.2s, color 0.2s;
-      border: none;
-      cursor: pointer;
-    }
-    .cta-btn:hover {
-      background: #a5b4fc;
-      color: #fff;
-    }
-    .emprendimiento {
-      margin-top: 18px;
-      font-size: 1.1rem;
-      color: #dbeafe;
-      font-weight: 500;
-      letter-spacing: 1px;
+      color: #fffde4;
     }
     main {
       max-width: 1100px;
@@ -109,120 +84,63 @@
     }
     section {
       margin-bottom: 60px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(245,158,66,0.07);
+      padding: 32px 24px;
     }
     h2 {
       text-align: center;
       font-size: 2rem;
-      margin-bottom: 30px;
-      color: #4f46e5;
+      margin-bottom: 20px;
+      color: #f59e42;
       font-weight: 700;
     }
-    .servicios-lista {
+    .productos-lista {
       display: flex;
       gap: 30px;
       justify-content: center;
       flex-wrap: wrap;
+      margin-top: 24px;
     }
-    .servicio {
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 2px 12px rgba(79,70,229,0.07);
-      padding: 30px 24px;
-      text-align: center;
-      width: 260px;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .servicio:hover {
-      transform: translateY(-8px) scale(1.03);
-      box-shadow: 0 8px 24px rgba(79,70,229,0.13);
-    }
-    .servicio img {
-      width: 64px;
-      margin-bottom: 18px;
-    }
-    .servicio h3 {
-      margin-bottom: 10px;
-      color: #3730a3;
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
-    .servicio p {
-      color: #555;
-      font-size: 1rem;
-    }
-    .portafolio-galeria {
-      display: flex;
-      gap: 24px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .proyecto {
-      background: #fff;
+    .producto {
+      background: #fef3c7;
       border-radius: 14px;
-      box-shadow: 0 2px 12px rgba(79,70,229,0.07);
-      overflow: hidden;
-      width: 300px;
+      box-shadow: 0 2px 8px rgba(245,158,66,0.08);
+      padding: 20px 16px;
       text-align: center;
+      width: 220px;
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .proyecto:hover {
-      transform: translateY(-6px) scale(1.02);
-      box-shadow: 0 8px 24px rgba(79,70,229,0.13);
+    .producto:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 24px rgba(245,158,66,0.13);
     }
-    .proyecto img {
-      width: 100%;
-      display: block;
+    .producto img {
+      width: 80px;
+      margin-bottom: 12px;
     }
-    .proyecto h4 {
-      margin: 14px 0 18px 0;
-      color: #4f46e5;
+    .producto h3 {
+      margin-bottom: 8px;
+      color: #b45309;
       font-size: 1.1rem;
       font-weight: 700;
     }
-    .contacto form {
-      max-width: 420px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-      background: #fff;
-      padding: 32px 28px;
-      border-radius: 18px;
-      box-shadow: 0 2px 12px rgba(79,70,229,0.07);
-    }
-    .contacto input, .contacto textarea {
-      padding: 12px;
-      border: 1px solid #a5b4fc;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-family: inherit;
-      resize: none;
-    }
-    .contacto button {
-      background: #4f46e5;
-      color: #fff;
-      border: none;
-      padding: 12px;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .contacto button:hover {
-      background: #3730a3;
+    .producto p {
+      color: #7c4700;
+      font-size: 0.98rem;
     }
     footer {
       text-align: center;
       padding: 28px 0 18px 0;
       background: #f1f5f9;
-      color: #4f46e5;
+      color: #f59e42;
       font-size: 1rem;
       margin-top: 40px;
-      border-top: 1px solid #e0e7ff;
+      border-top: 1px solid #fcd34d;
     }
     @media (max-width: 900px) {
-      .servicios-lista, .portafolio-galeria {
+      .productos-lista {
         flex-direction: column;
         align-items: center;
       }
@@ -237,86 +155,74 @@
   </style>
 </head>
 <body>
-  <script>
-    // Si no está autenticado, redirige al login
-    if (!localStorage.getItem('autenticado')) {
-      window.location.href = 'login.html';
-    }
-  </script>
   <header>
     <nav>
       <div class="logo-container">
-        <img src="logo/jwec.jpg" alt="Logo JWEC" class="logo-img">
-        <span class="logo-text">JWEC</span>
+        <img src="https://img.icons8.com/color/96/000000/cat--v1.png" alt="Logo El Gato Fénix" class="logo-img">
+        <span class="logo-text">El Gato Fénix</span>
       </div>
       <ul>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#portafolio">Portafolio</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#mision">Misión</a></li>
+        <li><a href="#vision">Visión</a></li>
+        <li><a href="#productos">Productos</a></li>
       </ul>
     </nav>
     <section class="hero">
-      <h1>¡Haz crecer tu negocio con una página web atractiva!</h1>
-      <p>Diseñamos y desarrollamos sitios web modernos, responsivos y personalizados para tu marca.</p>
-      <div class="emprendimiento">Un emprendimiento de <strong>JWEC</strong></div>
-      <div style="height: 32px;"></div> <!-- Espacio extra -->
-      <a href="#contacto" class="cta-btn">Solicita tu cotización</a>
+      <h1>Bienvenido a El Gato Fénix</h1>
+      <p>El santuario donde cada gato puede renacer y encontrar su segundo acto.</p>
     </section>
   </header>
 
   <main>
-    <section id="servicios" class="servicios">
-      <h2>Nuestros Servicios</h2>
-      <div class="servicios-lista">
-        <div class="servicio">
-          <img src="https://img.icons8.com/color/96/000000/web-design.png" alt="Diseño Web">
-          <h3>Diseño Web</h3>
-          <p>Diseños únicos y atractivos adaptados a tu negocio.</p>
-        </div>
-        <div class="servicio">
-          <img src="https://img.icons8.com/color/96/000000/source-code.png" alt="Desarrollo Web">
-          <h3>Desarrollo Web</h3>
-          <p>Webs rápidas, seguras y optimizadas para todos los dispositivos.</p>
-        </div>
-        <div class="servicio">
-          <h3>SEO</h3>
-          <p>Mejoramos tu posicionamiento en Google y otros buscadores.</p>
-        </div>
-      </div>
+    <section id="mision">
+      <h2>Misión</h2>
+      <p style="text-align:center;">
+        Rescatar, rehabilitar y reubicar gatos con historias de superación, y educar a la comunidad sobre la adopción responsable.<br>
+        Ofrecemos una curada selección de alimentos, juguetes, accesorios y servicios de aseo, nutrición y entrenamiento que promuevan la salud física y mental de cada felino, celebrando la capacidad de los gatos de renacer y prosperar.
+      </p>
     </section>
 
-    <section id="portafolio" class="portafolio">
-      <h2>Portafolio</h2>
-      <div class="portafolio-galeria">
-        <div class="proyecto">
-          <img src="https://placehold.co/300x200?text=Proyecto+1" alt="Proyecto 1">
-          <h4>Proyecto 1</h4>
-        </div>
-        <div class="proyecto">
-          <img src="https://placehold.co/300x200?text=Proyecto+2" alt="Proyecto 2">
-          <h4>Proyecto 2</h4>
-        </div>
-        <div class="proyecto">
-          <img src="https://placehold.co/300x200?text=Proyecto+3" alt="Proyecto 3">
-          <h4>Proyecto 3</h4>
-        </div>
-      </div>
+    <section id="vision">
+      <h2>Visión</h2>
+      <p style="text-align:center;">
+        Ser el santuario preferido donde cada gato encuentre su segundo acto, ofreciendo productos y servicios que celebren su espíritu resiliente y promuevan una vida llena de bienestar y alegría.
+      </p>
     </section>
 
-    <section id="contacto" class="contacto">
-      <h2>Contáctanos</h2>
-      <form>
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo electrónico" required>
-        <textarea placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
-        <button type="submit">Enviar mensaje</button>
-      </form>
+    <section id="productos">
+      <h2>Productos y Servicios</h2>
+      <div class="productos-lista">
+        <div class="producto">
+          <img src="https://firebasestorage.googleapis.com/v0/b/catalogo-productos-f6f06.firebasestorage.app/o/comida.avif?alt=media&token=8b8c15a4-c31e-4cdf-846c-aeb164f0ab77" alt="Alimentos">
+          <h3>Alimentos Premium</h3>
+          <p>Nutrición balanceada para todas las etapas de vida felina.</p>
+        </div>
+        <div class="producto">
+          <img src="https://firebasestorage.googleapis.com/v0/b/catalogo-productos-f6f06.firebasestorage.app/o/acesorio.avif?alt=media&token=d153c026-2ce9-4a9a-9242-07007b9f63f1" alt="Juguetes">
+          <h3>Juguetes</h3>
+          <p>Estimulación física y mental para gatos activos y curiosos.</p>
+        </div>
+        <div class="producto">
+          <img src="https://firebasestorage.googleapis.com/v0/b/catalogo-productos-f6f06.firebasestorage.app/o/juguete.webp?alt=media&token=65b27950-1ffe-40ef-b491-d670755a2529" alt="Accesorios">
+          <h3>Accesorios</h3>
+          <p>Camas, rascadores y más para el confort de tu felino.</p>
+        </div>
+        <div class="producto">
+          <img src="https://img.icons8.com/color/96/000000/shower-and-tub.png" alt="Aseo">
+          <h3>Servicios de Aseo</h3>
+          <p>Baños, corte de uñas y limpieza especializada.</p>
+        </div>
+        <div class="producto">
+          <img src="https://img.icons8.com/color/96/000000/doctor-male.png" alt="Nutrición y Entrenamiento">
+          <h3>Nutrición y Entrenamiento</h3>
+          <p>Asesoría profesional para el bienestar integral de tu gato.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 JWEC. Todos los derechos reservados.</p>
-    <button onclick="localStorage.removeItem('autenticado'); location.href='login.html';" style="margin-top:10px;">Cerrar sesión</button>
+    <p>&copy; 2025 El Gato Fénix. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>

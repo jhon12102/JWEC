@@ -40,8 +40,11 @@
 
     document.querySelector('form').addEventListener('submit', function(e) {
       e.preventDefault();
-      // Aquí puedes validar usuario/contraseña si lo deseas
+      // Obtener el nombre ingresado
+      const nombre = document.getElementById('nombre').value;
+      // Guardar autenticación y nombre en localStorage
       localStorage.setItem('autenticado', 'true');
+      localStorage.setItem('usuario', nombre);
       window.location.href = 'index.html';
     });
   </script>
