@@ -155,16 +155,33 @@
   </style>
 </head>
 <body>
+  <script>
+    // Si no está autenticado, redirige al login
+    if (!localStorage.getItem('autenticado')) {
+      window.location.href = 'login.html';
+    }
+    // Función para cerrar sesión
+    function cerrarSesion() {
+      localStorage.removeItem('autenticado');
+      localStorage.removeItem('usuario');
+      window.location.href = 'login.html';
+    }
+  </script>
   <header>
     <nav>
       <div class="logo-container">
         <img src="https://img.icons8.com/color/96/000000/cat--v1.png" alt="Logo El Gato Fénix" class="logo-img">
         <span class="logo-text">El Gato Fénix</span>
       </div>
-      <ul>
+      <ul style="display: flex; align-items: center; gap: 30px; margin: 0; padding: 0;">
         <li><a href="#mision">Misión</a></li>
         <li><a href="#vision">Visión</a></li>
         <li><a href="#productos">Productos</a></li>
+        <li>
+          <button onclick="cerrarSesion()" style="background:#f59e42;color:#fff;border:none;padding:10px 22px;border-radius:8px;font-weight:600;cursor:pointer;box-shadow:0 2px 8px rgba(245,158,66,0.13);transition:background 0.2s;">
+            Cerrar sesión
+          </button>
+        </li>
       </ul>
     </nav>
     <section class="hero">
